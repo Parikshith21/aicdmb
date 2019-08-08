@@ -14,26 +14,34 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <!-- <a class="navbar-brand" href="https://www.acm.org/" target='blank'> <img src="img\logo.png"/></a> -->
       <a class="navbar-brand" href="https://www.vvce.ac.in/" target='blank'> <img src="img\vvce.png" width=50
           height=60 /></a>
       <a href="index.html" class="navbar-brand">AICDMB</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="committee.html" class="nav-link">Committee</a>
+            <a href="index.html#speakers" class="nav-link">Speakers</a>
           </li>
-          <!-- <li class="nav-item">
-            <a href="services.html" class="nav-link"></a>
-          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Committee
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-white" href="committee.html#organizing">Organizing Committee</a>
+              <a class="dropdown-item text-white" href="committee.html#advisory">Advisory and Review Committee</a>
+            </div>
+          </li>
           <li class="nav-item">
             <a href="registration.html" class="nav-link">Registration</a>
           </li>

@@ -11,8 +11,12 @@ body {
 
 .navbar .nav-item.active {
   border-left: #444 3px solid;
+
 }
 
+.dropdown-menu a:hover {
+  background-color:rgb(19, 5, 5);
+}
 .carousel-item {
   height: 550px;
 }

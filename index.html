@@ -18,26 +18,34 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <!-- <a class="navbar-brand" href="https://www.acm.org/" target='blank'> <img src="img\logo.png"/></a> -->
       <a class="navbar-brand" href="https://www.vvce.ac.in/" target='blank'> <img src="img\vvce.png" width=50
           height=60 /></a>
       <a href="index.html" class="navbar-brand">AICDMB</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a href="index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="committee.html" class="nav-link">Committee</a>
+            <a href="index.html#speakers" class="nav-link">Speakers</a>
           </li>
-          <!-- <li class="nav-item">
-            <a href="services.html" class="nav-link"></a>
-          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Committee
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item text-white" href="committee.html#organizing">Organizing Committee</a>
+              <a class="dropdown-item text-white" href="committee.html#advisory">Advisory and Review Committee</a>
+            </div>
+          </li>
           <li class="nav-item">
             <a href="registration.html" class="nav-link">Registration</a>
           </li>
@@ -135,26 +143,36 @@
           <i class="fas fa-cog fa-3x mb-2"></i>
           <h3>Data Science</h3>
           <p class="text-justify">
-            Classification and regression, parallel and distributed learning, semi- and unsupervised learning, matrix and tensor methods, graph mining, reinforcement learning, deep learning, Bayesian methods, time series analysis, graphical models, text analytics and NLP, information retrieval, knowledge representation and reasoning.
+            Classification and regression, parallel and distributed learning, semi- and unsupervised learning, matrix
+            and tensor methods, graph mining, reinforcement learning, deep learning, Bayesian methods, time series
+            analysis, graphical models, text analytics and NLP, information retrieval, knowledge representation and
+            reasoning.
           </p>
         </div>
         <div class="col-md-3 mb-3 text-center">
           <i class="fas fa-comments fa-3x mb-2"></i>
           <h3>Machine Learning</h3>
           <p class="text-justify">
-            Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it learn for themselves.
+            Machine learning is an application of artificial intelligence (AI) that provides systems the ability to
+            automatically learn and improve from experience without being explicitly programmed. Machine learning
+            focuses on the development of computer programs that can access data and use it learn for themselves.
           </p>
         </div>
         <div class="col-md-3 mb-3 text-center">
           <i class="fas fa-cloud fa-3x mb-2"></i>
           <h3>Computing</h3>
-          <p class="text-justify">Computing is any activity that uses computers. It includes developing hardware and software, and using computers to manage and process information, communicate and entertain. Major computing disciplines include computer engineering, software engineering, computer science, information systems.</p>
+          <p class="text-justify">Computing is any activity that uses computers. It includes developing hardware and
+            software, and using computers to manage and process information, communicate and entertain. Major computing
+            disciplines include computer engineering, software engineering, computer science, information systems.</p>
         </div>
         <div class="col-md-3 mb-3 text-center">
           <i class="fas fa-dice-d6 fa-3x mb-2"></i>
           <h3>Blockchain</h3>
           <p class="text-justify">
-            A blockchain is a decentralized, distributed and public digital ledger that is used to record transactions across many computers so that any involved record cannot be altered retroactively, without the alteration of all subsequent blocks. The fields like Data storage, financial transactions, real estate and many more uses are being explored.</p>
+            A blockchain is a decentralized, distributed and public digital ledger that is used to record transactions
+            across many computers so that any involved record cannot be altered retroactively, without the alteration of
+            all subsequent blocks. The fields like Data storage, financial transactions, real estate and many more uses
+            are being explored.</p>
         </div>
       </div>
     </div>
@@ -198,7 +216,32 @@
     </div>
     </div>
   </section>
-
+  <section id="speakers">
+    <section id="staff" class="py-5 text-center bg-light text-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <h2><b>Keynote Speaker</b></h2>
+            <img src="img/teachers/sandeep_shukla.jpg" alt="" class="img-fluid rounded-circle mb-2">
+            <h4>Dr. Sandeep Kumar Shukla</h4>
+            <p class="text-justify">
+              Fellow IEEE, Professor and Head Department of Computer Science & Engineering,Indian Institute of
+              Technology,
+              Kanpur.
+            </p>
+          </div>
+          <div class="col-sm-4 ">
+            <h2><b>Plenary Speaker</b></h2>
+            <img src="img/teachers/anand.png" alt="" class="img-fluid rounded-circle mb-2">
+            <h4>Dr. Anand Nayyar</h4>
+            <p class="text-justify">
+              Professor & ACM Distinguished Speaker, Duy Tan University, Da Nang, Vietnam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
   <!-- HOME HEADING SECTION -->
   <section id="home-heading">
     <div class="dark-overlay">
@@ -217,25 +260,35 @@
       </div>
     </div>
   </section>
+
   <section id="staff" class="py-5 text-center bg-light text-black">
     <div class="container">
       <div class="column">
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-6">
-            <h2><b>Keynote Speaker</b></h2>
-            <img src="img/teachers/sandeep_shukla.jfif" alt="" class="img-fluid rounded-circle mb-2">
-            <h4>DR. Sandeep Kumar Shukla</h4>
-            <p class="text-justify">
-              Fellow IEEE, Professor and Head Department of Computer Science & Engineering,Indian Institute of Technology, Kanpur.
-            </p>
+            <img src="img/teachers/teacher-01.png" alt="" class="img-fluid rounded-circle mb-2">
+            <h4>DR. B SADASHIVE GOWDA</h4>
+            <small><b>General chair</b><br>
+              Principal,VVCE</small>
           </div>
-          <div class="col-lg-3 col-md-3 col-sm-6 ">
-              <h2><b>Plenary Speaker</b></h2>
-            <img src="img/teachers/anand.png" alt="" class="img-fluid rounded-circle mb-2">
-            <h4>DR. Anand Nayyar</h4>
-            <p class="text-justify">
-              Professor & ACM Distinguished Speaker, Duy Tan University, Da Nang, Vietnam.
-            </p>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <img src="img/teachers/teacher-02.png" alt="" class="img-fluid rounded-circle mb-2">
+            <h4>DR. G.B. KRISHNAPPA</h4>
+            <small><b>General Co-chair</b><br>
+              Dean (R & D), VVCE</small>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <img src="img/teachers/teacher-03.png" alt="" class="img-fluid rounded-circle mb-2">
+            <h4>DR. RAVI KUMAR V</h4>
+            <small><b>Program Chair</b><br>
+              Head Of Department, Computer Science Department VVCE</small>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <img src="img/teachers/teacher-04.png" alt="" class="img-fluid rounded-circle mb-2">
+            <br>
+            <h4>PROF. GURURAJ H L</h4>
+            <small><b>Program Co-chair</b><br>
+              ACM Distinguish Speaker,Assistant Professor, VVCE</small>
           </div>
         </div>
       </div>
@@ -259,91 +312,6 @@
     </div>
   </section>
 
-
-  <!-- VIDEO PLAY -->
-  <!-- <section id="video-play">
-    <div class="dark-overlay">
-      <div class="row">
-        <div class="col">
-          <div class="container p-5">
-            <a href="#" class="video" data-video="https://www.youtube.com/embed/HnwsG9a5riA" data-toggle="modal" data-target="#videoModal">
-              <i class="fas fa-play fa-3x"></i>
-            </a>
-            <h1>See What We Do</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- PHOTO GALLERY -->
-  <!-- <section id="gallery" class="py-5">
-    <div class="container">
-      <h1 class="text-center">Photo Gallery</h1>
-      <p class="text-center">Check out our photos</p>
-      <div class="row mb-4">
-        <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
-            data-width="560">
-            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="561"
-            data-width="561">
-            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
-            data-width="562">
-            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-
-      <div class="row mb-4">
-        <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/563x563" data-toggle="lightbox" data-gallery="img-gallery" data-height="563"
-            data-width="563">
-            <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid">
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/564x564" data-toggle="lightbox" data-gallery="img-gallery" data-height="564"
-            data-width="564">
-            <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid">
-          </a>
-        </div>
-
-        <div class="col-md-4">
-          <a href="https://source.unsplash.com/random/565x565" data-toggle="lightbox" data-gallery="img-gallery" data-height="565"
-            data-width="565">
-            <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-  <!-- NEWSLETTER -->
-  <!-- <section id="newsletter" class="text-center p-5 bg-dark text-white">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1>Stay Informed</h1>
-          <form class="form-inline justify-content-center">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Name">
-            <input type="text" class="form-control mb-2 mr-2" placeholder="Enter Email">
-            <button class="btn btn-primary mb-2">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
   <!-- FOOTER -->
   <footer id="main-footer" class="text-center p-4">
